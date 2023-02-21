@@ -7,35 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE0C519129A478910059073E /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE148D729A331370032DAEA /* NetworkExtension.framework */; };
+		BE0C519429A478910059073E /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0C519329A478910059073E /* PacketTunnelProvider.swift */; };
+		BE0C519929A478910059073E /* PacketTunnel.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BE0C519029A478910059073E /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BE0C519E29A47AC20059073E /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0C519D29A47AC20059073E /* Keychain.swift */; };
 		BEE148A329A32FBF0032DAEA /* KPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE148A229A32FBF0032DAEA /* KPNApp.swift */; };
 		BEE148A529A32FBF0032DAEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE148A429A32FBF0032DAEA /* ContentView.swift */; };
 		BEE148A729A32FC00032DAEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE148A629A32FC00032DAEA /* Assets.xcassets */; };
 		BEE148AA29A32FC00032DAEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE148A929A32FC00032DAEA /* Preview Assets.xcassets */; };
 		BEE148AC29A32FC00032DAEA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE148AB29A32FC00032DAEA /* Persistence.swift */; };
 		BEE148AF29A32FC00032DAEA /* KPN.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEE148AD29A32FC00032DAEA /* KPN.xcdatamodeld */; };
-		BEE148B929A32FC00032DAEA /* KPNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE148B829A32FC00032DAEA /* KPNTests.swift */; };
-		BEE148C329A32FC00032DAEA /* KPNUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE148C229A32FC00032DAEA /* KPNUITests.swift */; };
-		BEE148C529A32FC00032DAEA /* KPNUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE148C429A32FC00032DAEA /* KPNUITestsLaunchTests.swift */; };
+		BEE1490B29A336570032DAEA /* KPNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE1490A29A336570032DAEA /* KPNService.swift */; };
+		BEE1490F29A339180032DAEA /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE1490E29A339180032DAEA /* PrimaryButton.swift */; };
+		BEE1491129A339A00032DAEA /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE1491029A339A00032DAEA /* Spinner.swift */; };
+		BEE1491329A33FDB0032DAEA /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE1491229A33FDB0032DAEA /* WelcomeView.swift */; };
+		BEE1491629A345700032DAEA /* VPNProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE1491529A345700032DAEA /* VPNProfileManager.swift */; };
+		BEE1491B29A3522A0032DAEA /* VPNProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE1491A29A3522A0032DAEA /* VPNProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BEE148B529A32FC00032DAEA /* PBXContainerItemProxy */ = {
+		BE0C519729A478910059073E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BEE1489729A32FBF0032DAEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BEE1489E29A32FBF0032DAEA;
-			remoteInfo = KPN;
-		};
-		BEE148BF29A32FC00032DAEA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BEE1489729A32FBF0032DAEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BEE1489E29A32FBF0032DAEA;
-			remoteInfo = KPN;
+			remoteGlobalIDString = BE0C518F29A478910059073E;
+			remoteInfo = PacketTunnel;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BEE148E429A331370032DAEA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BE0C519929A478910059073E /* PacketTunnel.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		BE0C519029A478910059073E /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE0C519329A478910059073E /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		BE0C519529A478910059073E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE0C519629A478910059073E /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
+		BE0C519D29A47AC20059073E /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		BEE1489F29A32FBF0032DAEA /* KPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE148A229A32FBF0032DAEA /* KPNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPNApp.swift; sourceTree = "<group>"; };
 		BEE148A429A32FBF0032DAEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,29 +62,27 @@
 		BEE148A929A32FC00032DAEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BEE148AB29A32FC00032DAEA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		BEE148AE29A32FC00032DAEA /* KPN.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KPN.xcdatamodel; sourceTree = "<group>"; };
-		BEE148B429A32FC00032DAEA /* KPNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KPNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEE148B829A32FC00032DAEA /* KPNTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPNTests.swift; sourceTree = "<group>"; };
-		BEE148BE29A32FC00032DAEA /* KPNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KPNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEE148C229A32FC00032DAEA /* KPNUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPNUITests.swift; sourceTree = "<group>"; };
-		BEE148C429A32FC00032DAEA /* KPNUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPNUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BEE148D729A331370032DAEA /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		BEE1490A29A336570032DAEA /* KPNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPNService.swift; sourceTree = "<group>"; };
+		BEE1490E29A339180032DAEA /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		BEE1491029A339A00032DAEA /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		BEE1491229A33FDB0032DAEA /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		BEE1491529A345700032DAEA /* VPNProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNProfileManager.swift; sourceTree = "<group>"; };
+		BEE1491A29A3522A0032DAEA /* VPNProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNProfileView.swift; sourceTree = "<group>"; };
+		BEE1491C29A35C290032DAEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BEE1491D29A35C390032DAEA /* KPN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KPN.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BE0C518D29A478910059073E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE0C519129A478910059073E /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEE1489C29A32FBF0032DAEA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEE148B129A32FC00032DAEA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEE148BB29A32FC00032DAEA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,12 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE0C519229A478910059073E /* PacketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				BE0C519329A478910059073E /* PacketTunnelProvider.swift */,
+				BE0C519529A478910059073E /* Info.plist */,
+				BE0C519629A478910059073E /* PacketTunnel.entitlements */,
+			);
+			path = PacketTunnel;
+			sourceTree = "<group>";
+		};
 		BEE1489629A32FBF0032DAEA = {
 			isa = PBXGroup;
 			children = (
 				BEE148A129A32FBF0032DAEA /* KPN */,
-				BEE148B729A32FC00032DAEA /* KPNTests */,
-				BEE148C129A32FC00032DAEA /* KPNUITests */,
+				BE0C519229A478910059073E /* PacketTunnel */,
+				BEE148D629A331370032DAEA /* Frameworks */,
 				BEE148A029A32FBF0032DAEA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,8 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				BEE1489F29A32FBF0032DAEA /* KPN.app */,
-				BEE148B429A32FC00032DAEA /* KPNTests.xctest */,
-				BEE148BE29A32FC00032DAEA /* KPNUITests.xctest */,
+				BE0C519029A478910059073E /* PacketTunnel.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +124,10 @@
 		BEE148A129A32FBF0032DAEA /* KPN */ = {
 			isa = PBXGroup;
 			children = (
+				BEE1491D29A35C390032DAEA /* KPN.entitlements */,
+				BEE1491C29A35C290032DAEA /* Info.plist */,
+				BEE1490D29A3381F0032DAEA /* Service */,
+				BEE1490C29A338110032DAEA /* UI */,
 				BEE148A229A32FBF0032DAEA /* KPNApp.swift */,
 				BEE148A429A32FBF0032DAEA /* ContentView.swift */,
 				BEE148A629A32FC00032DAEA /* Assets.xcassets */,
@@ -116,26 +146,71 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		BEE148B729A32FC00032DAEA /* KPNTests */ = {
+		BEE148D629A331370032DAEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BEE148B829A32FC00032DAEA /* KPNTests.swift */,
+				BEE148D729A331370032DAEA /* NetworkExtension.framework */,
 			);
-			path = KPNTests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BEE148C129A32FC00032DAEA /* KPNUITests */ = {
+		BEE1490C29A338110032DAEA /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				BEE148C229A32FC00032DAEA /* KPNUITests.swift */,
-				BEE148C429A32FC00032DAEA /* KPNUITestsLaunchTests.swift */,
+				BEE1491729A351CF0032DAEA /* Views */,
+				BEE1491429A344D60032DAEA /* Kits */,
 			);
-			path = KPNUITests;
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BEE1490D29A3381F0032DAEA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BEE1491529A345700032DAEA /* VPNProfileManager.swift */,
+				BEE1490A29A336570032DAEA /* KPNService.swift */,
+				BE0C519D29A47AC20059073E /* Keychain.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BEE1491429A344D60032DAEA /* Kits */ = {
+			isa = PBXGroup;
+			children = (
+				BEE1491029A339A00032DAEA /* Spinner.swift */,
+				BEE1490E29A339180032DAEA /* PrimaryButton.swift */,
+			);
+			path = Kits;
+			sourceTree = "<group>";
+		};
+		BEE1491729A351CF0032DAEA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEE1491229A33FDB0032DAEA /* WelcomeView.swift */,
+				BEE1491A29A3522A0032DAEA /* VPNProfileView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BE0C518F29A478910059073E /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE0C519A29A478910059073E /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				BE0C518C29A478910059073E /* Sources */,
+				BE0C518D29A478910059073E /* Frameworks */,
+				BE0C518E29A478910059073E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacketTunnel;
+			productName = PacketTunnel;
+			productReference = BE0C519029A478910059073E /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		BEE1489E29A32FBF0032DAEA /* KPN */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEE148C829A32FC00032DAEA /* Build configuration list for PBXNativeTarget "KPN" */;
@@ -143,51 +218,17 @@
 				BEE1489B29A32FBF0032DAEA /* Sources */,
 				BEE1489C29A32FBF0032DAEA /* Frameworks */,
 				BEE1489D29A32FBF0032DAEA /* Resources */,
+				BEE148E429A331370032DAEA /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BE0C519829A478910059073E /* PBXTargetDependency */,
 			);
 			name = KPN;
 			productName = KPN;
 			productReference = BEE1489F29A32FBF0032DAEA /* KPN.app */;
 			productType = "com.apple.product-type.application";
-		};
-		BEE148B329A32FC00032DAEA /* KPNTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BEE148CB29A32FC00032DAEA /* Build configuration list for PBXNativeTarget "KPNTests" */;
-			buildPhases = (
-				BEE148B029A32FC00032DAEA /* Sources */,
-				BEE148B129A32FC00032DAEA /* Frameworks */,
-				BEE148B229A32FC00032DAEA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BEE148B629A32FC00032DAEA /* PBXTargetDependency */,
-			);
-			name = KPNTests;
-			productName = KPNTests;
-			productReference = BEE148B429A32FC00032DAEA /* KPNTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		BEE148BD29A32FC00032DAEA /* KPNUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BEE148CE29A32FC00032DAEA /* Build configuration list for PBXNativeTarget "KPNUITests" */;
-			buildPhases = (
-				BEE148BA29A32FC00032DAEA /* Sources */,
-				BEE148BB29A32FC00032DAEA /* Frameworks */,
-				BEE148BC29A32FC00032DAEA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BEE148C029A32FC00032DAEA /* PBXTargetDependency */,
-			);
-			name = KPNUITests;
-			productName = KPNUITests;
-			productReference = BEE148BE29A32FC00032DAEA /* KPNUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -199,16 +240,11 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					BE0C518F29A478910059073E = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					BEE1489E29A32FBF0032DAEA = {
 						CreatedOnToolsVersion = 14.2;
-					};
-					BEE148B329A32FC00032DAEA = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = BEE1489E29A32FBF0032DAEA;
-					};
-					BEE148BD29A32FC00032DAEA = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = BEE1489E29A32FBF0032DAEA;
 					};
 				};
 			};
@@ -226,13 +262,19 @@
 			projectRoot = "";
 			targets = (
 				BEE1489E29A32FBF0032DAEA /* KPN */,
-				BEE148B329A32FC00032DAEA /* KPNTests */,
-				BEE148BD29A32FC00032DAEA /* KPNUITests */,
+				BE0C518F29A478910059073E /* PacketTunnel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BE0C518E29A478910059073E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEE1489D29A32FBF0032DAEA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,67 +284,102 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEE148B229A32FC00032DAEA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEE148BC29A32FC00032DAEA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BE0C518C29A478910059073E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE0C519429A478910059073E /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEE1489B29A32FBF0032DAEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE1490F29A339180032DAEA /* PrimaryButton.swift in Sources */,
 				BEE148AC29A32FC00032DAEA /* Persistence.swift in Sources */,
 				BEE148AF29A32FC00032DAEA /* KPN.xcdatamodeld in Sources */,
+				BEE1491329A33FDB0032DAEA /* WelcomeView.swift in Sources */,
+				BEE1491129A339A00032DAEA /* Spinner.swift in Sources */,
 				BEE148A529A32FBF0032DAEA /* ContentView.swift in Sources */,
 				BEE148A329A32FBF0032DAEA /* KPNApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEE148B029A32FC00032DAEA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BEE148B929A32FC00032DAEA /* KPNTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEE148BA29A32FC00032DAEA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BEE148C529A32FC00032DAEA /* KPNUITestsLaunchTests.swift in Sources */,
-				BEE148C329A32FC00032DAEA /* KPNUITests.swift in Sources */,
+				BEE1491B29A3522A0032DAEA /* VPNProfileView.swift in Sources */,
+				BE0C519E29A47AC20059073E /* Keychain.swift in Sources */,
+				BEE1490B29A336570032DAEA /* KPNService.swift in Sources */,
+				BEE1491629A345700032DAEA /* VPNProfileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BEE148B629A32FC00032DAEA /* PBXTargetDependency */ = {
+		BE0C519829A478910059073E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BEE1489E29A32FBF0032DAEA /* KPN */;
-			targetProxy = BEE148B529A32FC00032DAEA /* PBXContainerItemProxy */;
-		};
-		BEE148C029A32FC00032DAEA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BEE1489E29A32FBF0032DAEA /* KPN */;
-			targetProxy = BEE148BF29A32FC00032DAEA /* PBXContainerItemProxy */;
+			target = BE0C518F29A478910059073E /* PacketTunnel */;
+			targetProxy = BE0C519729A478910059073E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		BE0C519B29A478910059073E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U7GJ9J6854;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PacketTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ken.vpn.kpn.app.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE0C519C29A478910059073E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U7GJ9J6854;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PacketTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ken.vpn.kpn.app.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		BEE148C629A32FC00032DAEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -353,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -407,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -420,26 +497,35 @@
 		BEE148C929A32FC00032DAEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KPN/KPN.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"KPN/Preview Content\"";
-				DEVELOPMENT_TEAM = A389H426DF;
+				DEVELOPMENT_TEAM = U7GJ9J6854;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KPN/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ken.KPN;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ken.vpn.kpn.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,111 +535,53 @@
 		BEE148CA29A32FC00032DAEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KPN/KPN.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"KPN/Preview Content\"";
-				DEVELOPMENT_TEAM = A389H426DF;
+				DEVELOPMENT_TEAM = U7GJ9J6854;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KPN/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ken.KPN;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ken.vpn.kpn.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		BEE148CC29A32FC00032DAEA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A389H426DF;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ken.KPNTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KPN.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KPN";
-			};
-			name = Debug;
-		};
-		BEE148CD29A32FC00032DAEA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A389H426DF;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ken.KPNTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KPN.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KPN";
-			};
-			name = Release;
-		};
-		BEE148CF29A32FC00032DAEA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A389H426DF;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ken.KPNUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KPN;
-			};
-			name = Debug;
-		};
-		BEE148D029A32FC00032DAEA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A389H426DF;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ken.KPNUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KPN;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BE0C519A29A478910059073E /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE0C519B29A478910059073E /* Debug */,
+				BE0C519C29A478910059073E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BEE1489A29A32FBF0032DAEA /* Build configuration list for PBXProject "KPN" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -568,24 +596,6 @@
 			buildConfigurations = (
 				BEE148C929A32FC00032DAEA /* Debug */,
 				BEE148CA29A32FC00032DAEA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BEE148CB29A32FC00032DAEA /* Build configuration list for PBXNativeTarget "KPNTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BEE148CC29A32FC00032DAEA /* Debug */,
-				BEE148CD29A32FC00032DAEA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BEE148CE29A32FC00032DAEA /* Build configuration list for PBXNativeTarget "KPNUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BEE148CF29A32FC00032DAEA /* Debug */,
-				BEE148D029A32FC00032DAEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
